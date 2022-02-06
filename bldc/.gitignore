@@ -1,5 +1,7 @@
 *~
 
+build/lst
+build/obj
 .dep
 .project
 .cproject
