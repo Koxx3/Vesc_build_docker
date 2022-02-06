@@ -13,3 +13,5 @@ cd David_vesc
 docker build -t vesc_fw_503 .
 docker run --rm -it -v $(pwd)/bldc:/bldc vesc_fw_cont
 ```
+
+result is in bldc/build
