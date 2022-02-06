@@ -1,9 +1,7 @@
 FROM ubuntu:18.04
 
 # COPY bldc from https://github.com/vedderb/bldc
-COPY bldc /root/
-
-WORKDIR /root
+WORKDIR /bldc
 CMD make
 
 # Always need to "apt-get update" after editing the sources or before package install
@@ -18,4 +16,3 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
         build-essential vim aptitude less 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y gcc-arm-embedded
-
