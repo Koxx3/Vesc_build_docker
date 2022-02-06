@@ -74,8 +74,8 @@
 //#define HW60_IS_MK4
 #define HW60_IS_MK5
 
-#define HW_SOURCE "hw_60.c"
-#define HW_HEADER "hw_60.h"
+//#define HW_SOURCE "hw_60.c"
+//#define HW_HEADER "hw_60.h"
 
 //#define HW_SOURCE "hw_r2.c"
 //#define HW_HEADER "hw_r2.h"
@@ -190,6 +190,13 @@
 
 //#define HW_SOURCE "hw_60_75.c"
 //#define HW_HEADER "hw_60_75.h"
+
+//#define HW_SOURCE "hw_megavesc.c"
+//#define HW_HEADER "hw_megavesc.h"
+
+#define HW_SOURCE "hw_gigavesc.c"
+#define HW_HEADER "hw_gigavesc.h"
+
 #endif
 
 #ifndef HW_SOURCE
