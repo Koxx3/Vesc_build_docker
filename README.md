@@ -10,8 +10,7 @@ sh ./get-docker.sh'
 ```
 git clone https://github.com/Koxx3/David_vesc.git
 cd David_vesc
-docker build -t vesc_fw_503 .
-docker run --rm -it -v $(pwd)/bldc:/bldc vesc_fw_cont
+./build.sh
 ```
 
 result is in bldc/build
