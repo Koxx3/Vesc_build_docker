@@ -12,15 +12,20 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential vim aptitude less 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y gcc-arm-embedded
 
-RUN git clone  --verbose  https://github.com/vedderb/bldc /bldc
+RUN git clone https://github.com/vedderb/bldc /bldc-master
 #COPY bldc from https://github.com/vedderb/bldc
 
-RUN wget https://github.com/vedderb/bldc/archive/refs/heads/master.zip
-RUN unzip /master.zip
-RUN pwd
-RUN ls -altr
+RUN git clone https://github.com/JohnSpintend/bldc /bldc-spintend
+
+RUN git clone https://github.com/vedderb/bldc-bootloader /bldc-bootloader
+
+RUN cp /bldc-spintend/hwconf/hw_ubox* /bldc-master/hwconf
+#RUN wget https://github.com/vedderb/bldc/archive/refs/heads/master.zip
+#RUN unzip /master.zip
+#RUN pwd
+#RUN ls -altr
 
 RUN cd /bldc-master && make arm_sdk_install
 
 WORKDIR /bldc-master
-CMD make fw_100_250 && mv /bldc/build/BLDC_4_ChibiOS.bin /bldc/
+#CMD make fw_100_250 && mv /bldc/build/BLDC_4_ChibiOS.bin /bldc/
