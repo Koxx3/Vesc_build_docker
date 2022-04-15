@@ -1,1 +1,0 @@
-(= (and 'nil 't) 'nil)
