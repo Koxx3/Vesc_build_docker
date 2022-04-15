@@ -9,6 +9,8 @@ sh ./install_docker.sh'
 
 https://docs.docker.com/desktop/windows/install/
 
+# Build
+
 ## Build VESC on Linux
 ```
 sh ./build.sh'
