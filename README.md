@@ -16,7 +16,7 @@ sh ./build.sh'
 
 ## Build VESC on Windows
 ```
-sh ./build.bat'
+sh ./build.bat
 ``` 
 
 ## Once image is build
