@@ -17,9 +17,11 @@ RUN git clone https://github.com/JohnSpintend/bldc /bldc-spintend
 
 RUN git clone https://github.com/vedderb/bldc-bootloader /bldc-bootloader
 
+RUN sed -i '1s/^/#define UBOX_V2_100V_250D\n/' hwconf/hw_uboxv2_100_100.h
+
 RUN cp /bldc-spintend/hwconf/hw_ubox* /bldc-master/hwconf
 
 RUN cd /bldc-master && make arm_sdk_install
 
 WORKDIR /bldc-master
-#CMD make fw_100_250 && mv /bldc/build/BLDC_4_ChibiOS.bin /bldc/
+#CMD make uboxv2_100_100 && find . -name *.bin | xargs -n 1 -I {} cp {} /bldc/
