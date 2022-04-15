@@ -13,7 +13,7 @@ https://docs.docker.com/desktop/windows/install/
 
 ## Build VESC on Linux
 ```
-sh ./build.sh'
+sh ./build.sh
 ``` 
 
 ## Build VESC on Windows
