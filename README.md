@@ -1,9 +1,13 @@
-# David_vesc
+# Docker
 
 ## Install docker on Linux
 ```
 sh ./install_docker.sh'
 ``` 
+
+## Install docker on Windows
+
+https://docs.docker.com/desktop/windows/install/
 
 ## Install VESC firmware 5.03
 ```
