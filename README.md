@@ -21,7 +21,7 @@ sh ./build.sh'
 sh ./build.bat
 ``` 
 
-## Once image is build / in image shell
+## Once image is built & launched / in image shell
 
 ```
 make 100_250 && mv /bldc-master/build/100_250/100_250.bin /bldc/
