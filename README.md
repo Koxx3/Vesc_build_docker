@@ -24,6 +24,6 @@ sh ./build.bat
 ## Once image is built & launched / in image bash
 
 ```
-make 100_250 && mv /bldc-master/build/100_250/100_250.bin /bldc/
+make uboxv2_100_100 && find . -name *.bin | xargs -n 1 -I {} cp {} /bldc/
 ``` 
 File is available in "bldc" folder
