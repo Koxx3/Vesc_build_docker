@@ -2,7 +2,7 @@
 
 ## Install docker on Linux
 ```
-sh ./install_docker.sh'
+sh ./install_docker.sh
 ``` 
 
 ## Install docker on Windows
