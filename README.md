@@ -27,7 +27,7 @@ https://docs.docker.com/desktop/windows/install/
 
 ```
 ./get_vesc.sh
-cd bldc-master && make uboxv2_100_100
-cd bldc-503 && make
+cd /bldc-master && make uboxv2_100_100
+cd /bldc-503 && make
 ``` 
 File is available in "build" folder
