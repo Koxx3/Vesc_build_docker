@@ -8,4 +8,5 @@ cp /bldc-spintend/hwconf/hw_ubox* /bldc-503/hwconf
 sed -i '1s/^/#define UBOX_V2_100V_250D\n/' /bldc-503/hwconf/hw_uboxv2_100_100.h
 sed -i '1s/^/#define UBOX_V2_100V_250D\n/' /bldc-master/hwconf/hw_uboxv2_100_100.h
 
-
+cd /bldc-master 
+make arm_sdk_install
