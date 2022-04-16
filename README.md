@@ -9,7 +9,7 @@ sh ./install_docker.sh
 
 https://docs.docker.com/desktop/windows/install/
 
-# Build
+# Build image
 
 ## Build VESC on Linux
 ```
@@ -21,9 +21,22 @@ sh ./build.sh
 sh ./build.bat
 ``` 
 
+# Run image
+
+## Build VESC on Linux
+```
+sh ./run.sh
+``` 
+
+## Build VESC on Windows
+```
+sh ./run.bat
+``` 
+
 ## Once image is built & launched / in image bash
 
 ```
-make uboxv2_100_100 && find . -name *.bin | xargs -n 1 -I {} cp {} /bldc/
+./get_vesc.sh
+cd bldc-master && make uboxv2_100_100
 ``` 
-File is available in "bldc" folder
+File is available in "build" folder
