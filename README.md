@@ -13,14 +13,14 @@ https://docs.docker.com/desktop/windows/install/
 
 ## Build VESC on Linux
 ```
-sh ./build.sh
+./build.sh
 ``` 
 
 # Run image
 
 ## Build VESC on Linux
 ```
-sh ./run.sh
+ ./run.sh
 ``` 
 
 ## Once image is built & launched / in image bash
