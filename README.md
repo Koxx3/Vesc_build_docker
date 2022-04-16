@@ -16,11 +16,6 @@ https://docs.docker.com/desktop/windows/install/
 sh ./build.sh
 ``` 
 
-## Build VESC on Windows
-```
-sh ./build.bat
-``` 
-
 # Run image
 
 ## Build VESC on Linux
@@ -28,15 +23,11 @@ sh ./build.bat
 sh ./run.sh
 ``` 
 
-## Build VESC on Windows
-```
-sh ./run.bat
-``` 
-
 ## Once image is built & launched / in image bash
 
 ```
-./get_vesc.sh [release_5_03|master]
-cd bldc && make uboxv2_100_100
+./get_vesc.sh
+cd bldc-master && make uboxv2_100_100
+cd bldc-503 && make
 ``` 
 File is available in "build" folder
