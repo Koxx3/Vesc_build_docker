@@ -25,7 +25,7 @@ https://docs.docker.com/desktop/windows/install/
 
 ## For vesc HW selection in 5.03 FW
 ``` 
-nano ./conf_general.h 
+nano /bldc-503/conf_general.h 
 ``` 
  
 ## Once image is built & launched / in image bash
