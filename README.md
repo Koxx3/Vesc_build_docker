@@ -32,7 +32,7 @@ nano /bldc-503/conf_general.h
 
 ```
 ./get_vesc.sh
-cd /bldc-master && make uboxv2_100_100
+cd /bldc-605 && make uboxv2_100_100
 cd /bldc-503 && make
 ``` 
 File is available in "build" folder
